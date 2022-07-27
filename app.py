@@ -11,7 +11,7 @@ posts = [
     {
         "title": "O meu Segundo Post", 
         "body": "Aqui é o texto do Post", 
-        "author": "Danilo", 
+        "author": "Dudu", 
         "created": datetime(2022,7,26)
     },
 ]
@@ -22,3 +22,4 @@ app = Flask("hello")
 @app.route("/")
 def index():
     return render_template("index.html", posts=posts)
+

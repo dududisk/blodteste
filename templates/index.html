@@ -1,11 +1,8 @@
-<html>
-    <head>
-        <title> Meu Blog </title>
-    </head>
-    <body>
-        <h1> Meu Blog </h1>
+{% extends "base.html" %} 
 
-        {% for post in posts %}
+{% block content %}
+{% for post in posts %}
+
             <article class="post">
                 <header>
                     <div>
@@ -19,9 +16,9 @@
             </article>
             {% if not loop.last %}
                 <hr>
-            {% endif %}    
-        {% endfor %}
- 
+
+    {% endif %}  
+
+{% endfor %}
+{% endblock %}
         
-    </body>
-</html>
